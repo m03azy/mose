@@ -1,8 +1,6 @@
 <?php
-	$conn=mysqli_connect("localhost","root","","workers");
-	if(!$conn){
-		echo "<script>alert('not connected')</script>";
-	}
+	require "connection.php";
+	require "header.php";
 
 	if(isset($_POST['register'])){
 		$fname=$_POST['firstName'];
@@ -21,6 +19,8 @@
 		// 	$sql=mysqli_query($conn,$query);
 		// 	if(!$sql){
 		// 		echo "<script>alert('data not inserted')</script>";
+		// 	}else{
+		// 		echo "<script>alert('data inserted successfully')</script>";	
 		// 	}
 		// }
 		// else{
@@ -44,46 +44,7 @@
 	}
 ?>
 <html>
-<head>
-<style>
-  body{background:#aaffdd;
-	align-items:center; 
-	}
-  h1,h2{
-	color:bedede;
-	font-family:sans-serif;
-	align-content:center;
-	}
- 
-  form{margin:150px;
-	background:#ffffff;
-	min:300px;
-	border-radius:4px;
-	border:black;
-	}
-  input{
-	padding:10px;
-	margin:5px;
-	border-radius:4px;
-	width:200px;
-	}
-  footer{background:#aaaaff;
-	max:400px;
-	border-radius:4px;
-	border:black;
-	}
-  select{padding:10px;
-	margin:5px;
-	border-radius:4px;
-	width:200px;
-	}
-</style>
-</head>
-
 <body>
-<center>
-	<h1>HELLO WORLD<h1>
-</center>
 <form method="post">
 <h2>REGISTER NEW MEMBER</h2>
 <input type="text" placeholder="first name" name="firstName" id="fname">
@@ -102,11 +63,9 @@
 <input type="submit" value="register" name="register">
 </form>
 <span id="message"></span>
-
-<footer>
-	<center>all rigth reserved</center>
-</footer>
-
+<?php
+	require "footer.php";
+?>
 </script>
 </body>
 </html>
