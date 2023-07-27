@@ -1,104 +1,12 @@
 <html lang="en">
 <head>
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <style>
-        body{
-        background:#ffffff;
-        align-items:center; 
-        font-family:sans-serif;
-        margin-left:50px;
-        justify-content:center;
-        }
-        h1,h2{
-            color:bedede;
-            align-content:center;
-        }
-        .task{	
-            background-color:#ffffff;
-            border-radius:4px;
-            height:10pc;
-            width:10pc;
-            margin:4px;
-        }
-
-        footer{
-            background:#0a0ae9;
-            color: #ffffff;
-            border-radius:4px;
-            font-family:callibri;
-        }
-
-        .img{
-            background:#ffffff;
-            border-radius:50%;
-            float:right;
-        }
-        header{
-            background-color:#aaaaff;
-            width:100%;
-        }
-        .menu{
-            border-radius:4px;
-            background-color:aabbcc;
-            height:300px;
-            width:120px;
-        }
-        li{
-            display:flex;
-        }
-        li:hover{
-            background-color:#e5eaf0;
-            color:blue;
-            width:auto;
-        }
-        a{
-            text-decoration:none;
-        }
-
-        h1,h2{
-            color: #00d;
-            font-family:sans-serif;
-            align-content:center;
-        }
-        h2{
-            margin-left:350px;
-        }
-
-        form{
-            margin:150px;
-            width:800px; 
-            border-radius:4px;
-            border:border-box;
-            background-color:#34ccd1;
-        }
-        input{
-            padding:9px;
-            margin-top:5px;
-            /* margin-left:150px; */
-            border-radius:4px;
-            width:300px;
-            margin-bottom:5px;
-            border:none;
-        }
-        .input{
-            /* margin-left:100px; */
-            width:auto;
-            border-radius:4px;
-            border:solid-black;
-            margin-left:20px;
-        }
-        select{
-            padding:10px;
-            margin:5px;
-            border-radius:4px;
-            width:200px;
-        }
-    </style>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <center>
-		<img src="evmak.png">
+		<img src="images/evmack.png">
 	</center>
 </body>
 </html>
