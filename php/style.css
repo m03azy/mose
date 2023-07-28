@@ -1,4 +1,4 @@
-body{background:#ffffff;
+body{background:#f8f8f8;
     align-content:center; 
     font-family:sans-serif;
     margin-left:50px;
@@ -89,6 +89,8 @@ select{
     margin-left:150px;
 }
 
-
+.profile{
+    margin-left:300px;
+}
 
 

@@ -36,8 +36,10 @@
                 echo "<script>incorrect username/password</script>";
             }
 
-        }elseif(empty($_POST['username']) && empty($_POST['password'])){
+        }else{
+            
             echo "<script>alert(please fill both fields)</script>";
+            header("location:index.php/");
         }
            
         

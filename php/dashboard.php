@@ -1,15 +1,8 @@
 <?php
   require "connection.php";
   session_start();
-  $sql="SELECT * FROM workers join tasks on workers.username=tasks.username where workers.Wid='$_SESSION[userId]'";
-
-  $query=mysqli_query($conn,$sql);
-
-  $row=mysqli_fetch_array($query);
-
-
-  echo $row['username'];
-  die();
+   // echo $row['username'];
+  // die();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +26,7 @@
       font-family: "Poppins", sans-serif;
       }
       body{
-      background: rgb(226, 226, 226);
+      background: #f8f8f8;
       }
       nav{
       position: sticky;
@@ -235,98 +228,49 @@
   </style>
 </head>
 <body>
-  <img src="images/evmack.png" alt="">
+  <center><img src="evmack.png" alt=""></center>
   <div class="container">
     <?php
 		require "menu.php";
 	?>
 
-
-    <section class="main">
-      <div class="main-top">
-        <h1>Attendance</h1>
-        <i class="fas fa-user-cog"></i>
-      </div>
-      <div class="users">
-        <div class="card">
-          <!-- <img src="./pic/img1.jpg"> -->
-          <h4><?php //$row['taskName']?></h4>
-          <p><?php //$row['username']?></p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>85%</span></td>
-                <td><span>87%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
+   
+      <section class="main">
+        <div class="main-top">
+          <h1>tasks</h1>
+          <i class="fas fa-user-cog"></i>
         </div>
-        <div class="card">
-          <img src="./pic/img2.jpg">
-          <h4>Balbina kherr</h4>
-          <p>Progammer</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>82%</span></td>
-                <td><span>85%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
+        <div class="users">
+          <div class="card">
+            <!-- <img src="./pic/img1.jpg"> -->
+        <?php
+          $sql="SELECT * FROM workers join tasks on workers.username=tasks.username where workers.Wid='$_SESSION[userId]'";
+            $query=mysqli_query($conn,$sql);
+            while($row=mysqli_fetch_array($query)){?>
+            <h4><?= $row['taskName']?></h4>
+            <p><?= $row['username']?></p>
+            <div class="per">
+              <table>
+                <tr>
+                  <td colspan="2"><span>from: <?=$row['date'];?></span></td>
+                  <!-- <td><span>87%</span></td> -->
+                </tr>
+                <!-- <tr>
+                  <td>Month</td>
+                  <td>Year</td>
+                </tr> -->
+              </table>
+            </div>
+            <!-- <button>Profile</button> -->
           </div>
-          <button>Profile</button>
-        </div>
-        <div class="card">
-          <img src="./pic/img3.jpg">
-          <h4>Badan John</h4>
-          <p>tester</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>94%</span></td>
-                <td><span>92%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
-        </div>
-        <div class="card">
-          <img src="./pic/img4.jpg">
-          <h4>Salina micheal</h4>
-          <p>Ui designer</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>85%</span></td>
-                <td><span>82%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
-        </div>
-      </div>
-
-      <section class="attendance">
-        <div class="attendance-list">
-          <h1>Attendance List</h1>
-          <table class="table">
-            <thead>
+        <?php }
+       ?>
+      
+      <!-- <section class="attendance"> -->
+        <!-- <div class="attendance-list"> -->
+          <!-- <h1>Attendance List</h1> -->
+          <!-- <table class="table"> -->
+            <!-- <thead>
               <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -335,8 +279,8 @@
                 <th>Join Time</th>
                 <th>Logout Time</th>
                 <th>Details</th>
-              </tr>
-            </thead>
+              </tr> -->
+            <!-- </thead>
             <tbody>
               <tr>
                 <td>01</td>
@@ -373,7 +317,7 @@
                 <td>8:00AM</td>
                 <td>3:00PM</td>
                 <td><button>View</button></td>
-              </tr>
+              </tr> -->
               <!-- <tr >
                 <td>05</td>
                 <td>Salina</td>

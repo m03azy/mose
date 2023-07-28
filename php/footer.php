@@ -6,7 +6,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
     <style>
-        body{background:#ffffff;
+        body{background:#f8f8f8;
     align-content:center; 
     font-family:sans-serif;
     margin-left:50px;
