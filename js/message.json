@@ -1,0 +1,17 @@
+{
+    "responses": [
+      {
+        "question": "What is your name?",
+        "answer": "I am a chatbot. Nice to meet you!"
+      },
+      {
+        "question": "How are you?",
+        "answer": "I'm just a bot, so I don't have feelings, but thanks for asking!"
+      },
+      {
+        "question": "What time is it?",
+        "answer": "I'm sorry, I don't have access to real-time data."
+      }
+    ]
+  }
+  

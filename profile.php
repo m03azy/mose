@@ -1,23 +1,19 @@
 <?php
-	   require "connection.php";
-	
-	session_start();
+  require "php/connection.php";
+  require "header.php";
+  session_start();
 
-   $username = mysqli_real_escape_string($conn, $_SESSION['username']);
-   $sql="SELECT * FROM workers where username='$username'";
-   $query=mysqli_query($conn,$sql);
-   $row=mysqli_fetch_array($query);
-   
+  $sql="SELECT * FROM workers WHERE username='$_SESSION[username]'";
+  $query=mysqli_query($conn,$sql);
+  $row=mysqli_fetch_array($query);
 ?>
 
-<html>
-
-<body>
-	<?php
-		require "header.php";
-		require "menu.php";
-	?>
-	<center>
+    <div class="container">
+      <?php
+        require "menu.php";
+      ?>
+          
+          <center>
 		<h1>profile<h1>
 	</center>
 
@@ -31,8 +27,6 @@
         <div class="users">
           <div class="card">
             <!-- <img src="./pic/img1.jpg"> -->
-
-
 			
 			<img src="#">
 			<div class="profile"><?=$row['username']?></div>
@@ -65,13 +59,7 @@
           </div>
         <?php //}
        ?>
-      </section>
     </section>
-
-	<footer>
-		<?php
-			require "footer.php";
-		?>
-	</footer>
-</body>
+    </div>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
-	require "connection.php";
+	require "php/connection.php";
 	require "header.php";
-
+	// require "menu.php";
 	if(isset($_POST['register'])){
 		$fname=$_POST['firstName'];
 		$lname=$_POST['lastName'];
@@ -11,23 +11,6 @@
 		$role=$_POST['role'];
 		$password=$_POST['password'];
 		$username=$_POST['username'];
-
-		// echo $DOB;
-		// die();
-		// if(!empty($fname) && !empty($lname) && !empty($DOB) && !empty($phone) && !empty($email) && !empty($role) && !empty($password) && !empty($username)){
-		// 	$query="INSERT INTO workers (fname,lname,DOB,phone,email,role,password)values('$fname','$lname','$DOB','$phone','$email','$role','$password')";
-		// 	$sql=mysqli_query($conn,$query);
-		// 	if(!$sql){
-		// 		echo "<script>alert('data not inserted')</script>";
-		// 	}else{
-		// 		echo "<script>alert('data inserted successfully')</script>";	
-		// 	}
-		// }
-		// else{
-		// 	echo "<script>alert('please fill both fields')</script>";
-		// 	echo "<h1>please fill both fields</h1>";
-		// 	// die();
-		// }
 
 		if(empty($fname) || empty($lname) || empty($DOB) || empty($phone) || empty($email) || empty($role) || empty($password) || empty($username)){
 				echo "<h1>please fill both fields</h1>";
@@ -63,6 +46,9 @@
 <input type="submit" value="register" name="register">
 </form>
 <span id="message"></span>
+
+<a href="viewusers.php">view users</a>
+<a href="viewtask.php">view tasks</a>
 <?php
 	require "footer.php";
 ?>
