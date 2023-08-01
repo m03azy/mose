@@ -30,7 +30,7 @@
           <i class="fas fa-list-alt"></i>
           <span class="nav-item">tasks</span>
         </a></li>
-        <li><a href="#">
+        <li><a href="setting.php">
           <i class="fas fa-cog"></i>
           <span class="nav-item">Setting</span>
         </a></li>

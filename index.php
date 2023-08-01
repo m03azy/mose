@@ -9,13 +9,13 @@
 		<form method="post" action="login.php">
 			<h2>login</h2>
 			<?php
-    // Check if an error occurred and display the message
-    if (isset($_GET['error']) && $_GET['error'] === '1') {
-        echo '<p style="color: red;">Incorrect username or password.</p>';
-    }elseif (isset($_GET['error']) && $_GET['error'] === '2') {
-        echo '<p style="color: red;">please fill both fields.</p>';
-    }
-    ?>
+				// Check if an error occurred and display the message
+				if (isset($_GET['error']) && $_GET['error'] === '1') {
+					echo '<p style="color: red;">Incorrect username or password.</p>';
+				}elseif (isset($_GET['error']) && $_GET['error'] === '2') {
+					echo '<p style="color: red;">please fill both fields.</p>';
+				}
+			?>
 			<div class="input">
 				<input type="text" placeholder="username" name="username"><br>
 				<input type="password" placeholder="password" name="password"><br>

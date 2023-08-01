@@ -1,7 +1,7 @@
 <?php
     require "php/connection.php";
     require "header.php";
-    require "menu.php";
+    // require "menu.php";
     // require "css/style.css";
 
     $stmt="select * from workers";
@@ -37,6 +37,7 @@
 ?>
 
 </table>
-
+<a href="viewtask.php">tasks</a>
+<a href="register.php">add member</a>
 
 </div>

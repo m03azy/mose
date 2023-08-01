@@ -14,7 +14,7 @@
 			<h2>dashboard</h2>
 		</header>
 		<div class="image">
-		<img src="images/evmak.png">
+		<img src="images/evmack.png">
 		</div>
         
 		<div class="task">
