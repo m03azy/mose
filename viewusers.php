@@ -7,7 +7,8 @@
     $stmt="select * from workers";
     $sql=mysqli_query($conn,$stmt);
     
-    echo "<div class='container'> <section class='main'> <div class='users'> <div class='card'>";
+    echo "
+    <div class='container'> ";
     echo "<table border='1'>
     <tr>
         <th>wid</th>
@@ -37,7 +38,9 @@
 ?>
 
 </table>
+<br>
 <a href="viewtask.php">tasks</a>
 <a href="register.php">add member</a>
+<a href="logout.php">logout</a>
 
 </div>

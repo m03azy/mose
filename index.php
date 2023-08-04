@@ -3,11 +3,39 @@
 	require "header.php";
 	
 ?>
-
+<style>
+	   form{
+        margin:150px;
+        width:auto; 
+         border-radius:4px; 
+        /* border:solid aqua 1px; */
+        margin-left: 350px;
+        align-items: center;
+        align-content: center;
+         }
+		 input{
+    padding:9px;
+    margin-top:5px;
+    margin-left:10px;
+    border-radius:4px;
+    width:360px;
+    margin-bottom:5px;
+    border:solid black 1px;
+    border:1px;
+    }
+    .input{ 
+     margin-left:100px; 
+    width:auto; 
+    border-radius:4px; 
+     /* border:solid black; */
+     margin-left:20px;
+    } 
+</style>
 		<img src="images/evmack.png" alt="no image">
 		
 		<form method="post" action="login.php">
 			<h2>login</h2>
+		
 			<?php
 				// Check if an error occurred and display the message
 				if (isset($_GET['error']) && $_GET['error'] === '1') {
@@ -38,7 +66,7 @@
 		</form>-->
 
 		<?php
-			require "footer.php";
+			// require "footer.php";
 		?>
 		
 	</body>

@@ -6,6 +6,10 @@
 
     $stmt="select * from tasks";
     $sql=mysqli_query($conn,$stmt);
+    echo "<section class='main'>
+     
+    <div class='users'> 
+    <div class='card'>";
     
     echo "<table>
     <tr>
@@ -25,5 +29,9 @@
 
 ?>
 </table>
+</div>
+</div>
+
 <a href="viewusers.php">users</a>
 <a href="register.php">add member</a>
+<a href="logout.php">logout</a>
